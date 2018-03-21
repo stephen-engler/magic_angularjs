@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Angular magic</title>
+    <script src="vendors/angular/angular.js"></script>
+    <script src="scripts/client.js"></script>
 </head>
-<body>
-    
+<body ng-app="myApp">
+    <div ng-controller="Welcome as hw">
+        <h1>Magic</h1>
+        <input type="text" ng-model = "intro">
+        {{intro}}
+        {{hw.greeting}}
+    </div>
 </body>
 </html>
